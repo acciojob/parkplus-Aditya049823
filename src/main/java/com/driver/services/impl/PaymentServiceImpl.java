@@ -1,8 +1,8 @@
 package com.driver.services.impl;
 
-import com.driver.Entity.Payment;
-import com.driver.Entity.Reservation;
-import com.driver.Entity.Spot;
+import com.driver.Model.Payment;
+import com.driver.Model.Reservation;
+import com.driver.Model.Spot;
 import com.driver.model.PaymentMode;
 import com.driver.repository.PaymentRepository;
 import com.driver.repository.ReservationRepository;

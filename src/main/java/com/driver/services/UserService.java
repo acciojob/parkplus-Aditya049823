@@ -1,7 +1,7 @@
 package com.driver.services;
 
 
-import com.driver.Entity.User;
+import com.driver.Model.User;
 
 public interface UserService {
 

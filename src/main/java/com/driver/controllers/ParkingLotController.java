@@ -1,7 +1,7 @@
 package com.driver.controllers;
 
-import com.driver.Entity.ParkingLot;
-import com.driver.Entity.Spot;
+import com.driver.Model.ParkingLot;
+import com.driver.Model.Spot;
 import com.driver.services.ParkingLotService;
 import com.driver.services.impl.ParkingLotServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
