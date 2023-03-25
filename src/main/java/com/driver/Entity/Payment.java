@@ -18,10 +18,11 @@ public class Payment {
     public Payment() {
     }
 
-    public Payment(int id, boolean paymentCompleted, PaymentMode paymentMode) {
+    public Payment(int id, boolean paymentCompleted, PaymentMode paymentMode,Reservation reservation) {
         this.id = id;
         this.paymentCompleted = paymentCompleted;
         this.paymentMode = paymentMode;
+        this.reservation=reservation;
     }
 
     public int getId() {
@@ -46,6 +47,14 @@ public class Payment {
 
     public void setPaymentMode(PaymentMode paymentMode) {
         this.paymentMode = paymentMode;
+    }
+
+    public Reservation getReservation() {
+        return reservation;
+    }
+
+    public void setReservation(Reservation reservation) {
+        this.reservation = reservation;
     }
 
     @OneToOne
