@@ -10,16 +10,14 @@ public class Reservation {
 
     private int numberOfHours;
 
-    public Reservation(Integer timeInHours) {
+    public Reservation(int numberOfHours) {
+        this.numberOfHours=numberOfHours;
     }
 
-    public Reservation(int id, int numberOfHours,Spot spot,Payment payment,User user) {
-        this.id = id;
-        this.numberOfHours = numberOfHours;
-        this.spot=spot;
-        this.payment=payment;
-        this.user=user;
+    public Reservation() {
     }
+
+
 
     public int getId() {
         return id;
@@ -60,6 +58,8 @@ public class Reservation {
     public void setUser(User user) {
         this.user = user;
     }
+
+
 
     @ManyToOne
     Spot spot;
