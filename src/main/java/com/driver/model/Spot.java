@@ -1,6 +1,4 @@
-package com.driver.Model;
-
-import com.driver.model.SpotType;
+package com.driver.model;
 
 import javax.persistence.*;
 import java.util.ArrayList;
