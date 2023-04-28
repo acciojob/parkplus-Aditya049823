@@ -20,14 +20,14 @@ public class User {
     public User() {
     }
 
-    public User(int id, String name, String phoneNumber, String password,List<Reservation>reservations) {
-        this.id = id;
+    public User(String name, String phoneNumber, String password) {
         this.name = name;
         this.phoneNumber = phoneNumber;
         this.password = password;
-        this.reservations=reservations;
     }
 
+    @OneToMany(mappedBy = "user",cascade = CascadeType.ALL)
+    List<Reservation>reservations=new ArrayList<>();
     public int getId() {
         return id;
     }
@@ -68,6 +68,4 @@ public class User {
         this.reservations = reservations;
     }
 
-    @OneToMany(mappedBy = "user",cascade = CascadeType.ALL)
-    List<Reservation>reservations=new ArrayList<>();
 }
